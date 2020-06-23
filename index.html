@@ -6,27 +6,30 @@
     <meta name = "author" content = "Candice Yuxi Wang">
     <meta name = "viewport" content = "width=device-width, initiual-scale=1.0">
     <title>Candice Yuxi Wang</title>
+
+    <script src="https://use.fontawesome.com/8beeb52a74.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   </head>
   <body>
 
     <!-- Navigation bar -->
     <nav>
       <ul>
-        <li><a href = "#"> About</a></li>
-        <li><a href = "#"> Research</a></li>
+        <li><a href = "#about"> About</a></li>
+        <li><a href = "#research"> Research</a></li>
           <ul>
-            <li><a href = "#"> Motivation and Memory</a></li>
-            <li><a href = "#"> Control Demand and Event Cognition</a></li>
-            <li><a href = "#"> Emotion Perception</a></li>
+            <li><a href = "#research_memory"> Motivation and Memory</a></li>
+            <li><a href = "#research_control"> Control Demand and Event Cognition</a></li>
+            <li><a href = "#research_emotion"> Emotion Perception</a></li>
           </ul>
-        <li><a href = "#"> Publications</a></li>
-        <li><a href = "#"> CV & Resume</a></li>
+        <li><a href = "#pubs"> Publications</a></li>
+        <li><a href = "#cv"> CV & Resume</a></li>
       </ul>
     </nav>
 
     <!-- Main page -->
     <main>
-      <div>
+      <div id = "about">
         <h2> Candice Wang</h2>
         <img src="assets/CandiceWang_edited.jpg" alt="head shot">
         <p>
@@ -39,9 +42,22 @@
            and a volunteer board member of an educational non-profit called
            <a href = "https://www.tellurideassociation.org/">Telluride Association</a>.
         </p>
-      </div>
+        <div class="social-icons">
+          <a href="https://scholar.google.com/citations?user=G-nS0l8AAAAJ&hl=en" alt="Google Scholar profile">
+            <i class="fab fa-google"></i>
+          </a>
+          <a href="https://www.linkedin.com/in/candice-yuxi-wang" alt="LinkedIn profile">
+            <i class="fab fa-linkedin"></i>
+          </a>
+          <a href="https://github.com/candiceyuxiwang" alt="Github profile">
+            <i class="fab fa-github"></i>
+          </a>
+          <a href="https://twitter.com/CandiceYuxiWang" alt="Twitter profile">
+            <i class="fab fa-twitter"></i>
+          </a>
+        </div>
 
-      <div>
+      <div id = "research">
         <h2> Research</h2>
         <p>
           At Duke, I work with <a href = "https://www.adcocklab.org/">Alison Adcock</a>
@@ -53,7 +69,7 @@
           <br><br>See more details below:
         </p>
 
-          <div>
+          <div id = "research_memory">
           <h2> Motivation and Memory</h2>
           <p>
             Memory is not a veridical record of experience, but rather influenced by
@@ -66,7 +82,7 @@
           </p>
           </div>
 
-          <div>
+          <div id = "research_control">
           <h2> Control Demand and Event Cognition</h2>
           <p>
             Although our daily experiences are continuous, they are segmented into
@@ -80,7 +96,7 @@
           </p>
           </div>
 
-          <div>
+          <div id = "research_emotion">
           <h2> Emotion Perception</h2>
           <p>
             Prior to starting graduate school at Duke, I studied affective
@@ -94,24 +110,31 @@
           </div>
       </div>
 
-      <div>
+      <div id = "pubs">
         <h2> Publications</h2>
         <p>
           Wang, Y. C., Bianciardi, M., Chanes, L., & Satpute, A. B. (2020).
           <a href="https://www.nature.com/articles/s41598-020-57653-z">Ultra high
             field fMRI of human superior colliculi activity during affective visual
             processing</a>. Scientific reports, 10(1), 1-7.
-
-          <img scr="assets/7TSC_fig.jpg" alt="superior colliculus publication figure">
         </p>
+        <img scr="assets/7TSC_fig.jpg" alt="superior colliculus publication figure">
+
         <p>
           Park, G., Lewis, R. S., Wang, Y. C., Cho, H. J., & Goto, S. G. (2018).
           <a href="https://link.springer.com/article/10.1007/s40167-018-0067-1">Are
             you mad at me? Social anxiety and early visual processing of anger
             and gaze among Asian American biculturals</a>. Culture and Brain, 6(2), 151-170.
-
-          <img scr="assets/eyeGaze_fig.jpg" alt="cultural neuro publication figure">
         </p>
+        <img scr="assets/eyeGaze_fig.jpg" alt="cultural neuro publication figure">
+      </div>
+
+      <div id = "cv">
+        <h2> CV and Resume</h2>
+        <ul>
+          <li><a href="">Download CV</a></li>
+          <li><a href="">Download Resume</a></li>
+        </ul>
       </div>
 
     </main>
