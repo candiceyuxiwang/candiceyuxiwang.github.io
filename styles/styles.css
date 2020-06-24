@@ -46,12 +46,16 @@ nav ul ul li{
 nav img{
   border-radius:100%;
   width: 15%;
-  padding: 20px;
+  padding: 2%;
 }
 
 /* figures for pubs */
 div img{
   width: 30%;
+}
+
+i{
+  padding-top: 20%;
 }
 
 .social-icons
@@ -65,7 +69,7 @@ a{
 	text-align:center;
 	font-size:2rem;
 	line-height:3.5rem;
-	margin-right:1rem;
+	margin-right:1rem 
 }
 
 .social-icons a:last-child{
@@ -79,31 +83,30 @@ a{
 main {
 	background-color:#F2EBDF!important;
   color:#707070!important;
-  padding: 20px 20px;
+  padding: 2% 2%;
   margin: 0;
 }
 
 main a{
-	color:#B0D9D9;
+	color:#60AEBF;
 
 }
 
 /* unvisited link */
 main a:link {
-  color: #B0D9D9;
-
-}
-
-/* visited link */
-main a:visited {
   color: #60AEBF;
+
 }
 
 /* mouse over link */
 main a:hover {
-  color: #60AEBF;
+  color: #B0D9D9;
 }
 
 div{
   padding: 40px;
+}
+
+main p{
+  padding-left: 40%;
 }
