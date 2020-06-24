@@ -1,0 +1,109 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
+
+*{
+  box-sizing: border-box;
+}
+
+body{
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+nav {
+  background-color: #B0D9D9;
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 0;
+  width: 100%;
+  padding: 10px 0;
+}
+
+nav li a{
+  color: #707070!important;
+  text-decoration: none;
+  display: block;
+  text-align: center;
+  padding: 10px 20px;
+}
+
+nav li a:hover{
+  color: #60AEBF!important;
+}
+
+nav ul {
+  margin:0;
+  padding: 0 10px;
+  list-style-type: none;
+}
+
+/* nav sub menu*/
+nav ul ul li{
+  padding-left: 40px;
+}
+
+/* headshot on nav*/
+nav img{
+  border-radius:100%;
+  width: 15%;
+  padding: 20px;
+}
+
+/* figures for pubs */
+div img{
+  width: 30%;
+}
+
+.social-icons
+a{
+	display:inline-block;
+	height:3.5rem;
+  width:3.5rem;
+	background-color:#707070;
+	color:#FFF!important;
+	border-radius:100%;
+	text-align:center;
+	font-size:2rem;
+	line-height:3.5rem;
+	margin-right:1rem;
+}
+
+.social-icons a:last-child{
+	margin-right:0;
+	}
+
+.social-icons a:hover{
+	background-color:#60AEBF;
+}
+
+main {
+	background-color:#F2EBDF!important;
+  color:#707070!important;
+  padding: 20px 20px;
+  margin: 0;
+}
+
+main a{
+	color:#B0D9D9;
+
+}
+
+/* unvisited link */
+main a:link {
+  color: #B0D9D9;
+
+}
+
+/* visited link */
+main a:visited {
+  color: #60AEBF;
+}
+
+/* mouse over link */
+main a:hover {
+  color: #60AEBF;
+}
+
+div{
+  padding: 40px;
+}
