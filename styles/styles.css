@@ -2,7 +2,53 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
 
 /* starting media queries*/
-@media only screen and (mind-width:768px){
+@media only screen and (min-width:700px){
+  /* navigation bar */
+
+  nav {
+    padding: 0;
+  }
+
+  nav li{
+    display: inline-block;
+  }
+
+  div ul{
+    width: 100%;
+  }
+
+}
+
+@media only screen and (min-width:900px){
+
+  .social-icons{
+    padding-left: 25%;
+  }
+
+  div img{
+    float:right;
+    display: inline-block;
+    padding: 0;
+    margin: 0;
+    width: 80%;
+  }
+
+  .grid{
+    display: grid;
+    grid-template-columns: 0.5fr 0.5fr;
+    padding-left: 25%;
+  }
+
+  .publication{
+    padding: 0;
+    margin: 0;
+    width: 80%;
+    display: inline-block;
+  }
+
+  main p{
+    padding-left: 25%;
+  }
 
 }
 
@@ -28,8 +74,8 @@ nav {
 /* headshot on nav*/
 nav img{
   border-radius:100%;
-  width: 15%;
-  padding: 2%;
+  width: 120px;
+  padding: 10px;
   display: inline;
 }
 
@@ -41,33 +87,40 @@ nav ul {
 }
 
 /* nav sub menu*/
-nav ul ul li{
+nav li ul {
   padding-left: 40px;
+  display: none;
 }
 
 nav li{
   display: inline-block;
-  padding: 10px 30px;
+  padding: 10px 2%;
 }
 
 nav li a{
   color: #F2F2F2!important;
   text-decoration: none;
   text-align: center;
-  padding: 10px 20px;
 }
 
 nav li a:hover{
   background-color: #89DAD9!important;
 }
 
+nav li:hover .subnav{
+  display: block;
+  position: absolute;
+  top: 150px;
+  background-color: #0396A6;
+}
+
+.subnav li{
+  display: block;
+}
+
 /* social/network icons */
 i{
   padding-top: 20%;
-}
-
-.social-icons{
-  /*padding-left: 25%;*/
 }
 
 .social-icons
@@ -100,17 +153,13 @@ main {
   padding-bottom: 200px;
 }
 
-main p{
-  /*padding-left: 25%;*/
-}
-
 div{
   padding: 40px 40px;
 }
 
 /* figures for pubs */
 div img{
-  width: 30%;
+  width: 50%;
 }
 
 main a{
@@ -130,13 +179,14 @@ main a:hover {
 }
 
 h2{
-  padding: 5% 0;
+  padding-top: 5%;
+  padding-left: 40px;
 }
 
 /* download cv and resume*/
 div ul{
   float: right;
-  width: 85%;
+  width: 75%;
   list-style-type: none;
 }
 
