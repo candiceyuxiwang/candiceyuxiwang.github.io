@@ -67,13 +67,17 @@ nav li:hover .subnav{
   display: block;
 }
 
+/* hamburger nav */
+.topnav .iconHolder {
+  display: none;
+}
+
 /* social/network icons */
-i{
+.social-icons i{
   padding-top: 20%;
 }
 
-.social-icons
-a{
+.social-icons a{
 	display:inline-block;
 	height:2.5rem;
   width:2.5rem;
@@ -157,6 +161,55 @@ div ul li a:hover{
 
 /* starting media queries*/
 
+/* hamburger menu for small screen */
+@media screen and (max-width: 600px) {
+  .topnav {
+    overflow: hidden;
+  }
+
+  .topnav li:not(:first-child){
+    display: none;
+  }
+
+  .topnav li:first-child {
+    float: left;
+    width: 90%;
+  }
+
+  .topnav li.iconHolder{
+    display: block;
+    float: right;
+  }
+
+  .topnav li a.icon {
+    display: block;
+  }
+
+  nav li:hover .subnav{
+    top: 15px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+
+  .topnav.responsive {
+    position: relative;
+  }
+
+  .topnav.responsive li {
+    float: none;
+    display: block;
+  }
+  .topnav.responsive .dropdown {float: none;}
+  .topnav.responsive .dropdown-content {position: relative;}
+  .topnav.responsive .dropdown .dropbtn {
+    display: block;
+    width: 100%;
+    text-align: left;
+  }
+}
+
+/* tablet size */
 @media only screen and (min-width:700px){
   /* navigation bar */
 
@@ -178,6 +231,7 @@ div ul li a:hover{
 
 }
 
+/* computer browser size */
 @media only screen and (min-width:900px){
 
   .social-icons{
